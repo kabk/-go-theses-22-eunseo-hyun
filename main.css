@@ -119,6 +119,10 @@ a:hover {
   color: yellow;
 }
 
+ a{
+    color: white;
+  }
+
 
 p {
    font-family: 'Chakra Petch';
@@ -387,7 +391,10 @@ sup{
     color: yellow;
   }
 
-
+ a{
+    color: white;
+  }
+      
   p {
      font-family: 'Chakra Petch';
      font-size: 1.7em;
@@ -599,6 +606,10 @@ sup{
 
   a:hover {
     color: yellow;
+  }
+      
+      a{
+    color: white;
   }
 
 
