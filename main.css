@@ -361,7 +361,8 @@ sup{
    z-index: -1000;
    background-attachment: scroll;
    width: 100%;
-   right: 50%;
+   padding-top: 2%;
+   padding-bottom: 1%;
   }
 
   li{
