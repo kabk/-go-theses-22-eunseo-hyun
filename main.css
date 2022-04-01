@@ -1,15 +1,19 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
 
 * {
     padding: 0;
     margin: 0;
 }
 
+@media (min-width: 700px) {
 
 .col {
     position: relative;
     display: block;
 }
+
 
 .col-1 {
     width: 50%;
@@ -25,7 +29,7 @@
     width: 50%;
     min-height: auto;
     margin-left: 0;
-    padding-top: 100px;
+    padding-top: 150px;
     float: left;
     opacity: 1;
     background-color: black;
@@ -47,6 +51,8 @@ body {
   background-color: black;
 }
 
+
+
 .topnav {
   overflow: hidden;
   position: fixed;
@@ -65,7 +71,7 @@ justify-content: center;
   text-align: center;
   padding: 14px 16px;
   font-family: 'Chakra Petch';
-  font-size: 1.2em;
+  font-size: 1.5em;
   white-space:nowrap;
   border-radius: calc(0.6em + 16px);
   background-color: white;
@@ -89,7 +95,7 @@ justify-content: center;
 
 li{
   font-family: 'Chakra Petch';
-  padding: 10px;
+  padding: 20px;
   color: white;
   text-align: left;
   text-decoration: underline;
@@ -116,21 +122,43 @@ a:hover {
 
 p {
    font-family: 'Chakra Petch';
-   font-size: 1.5em;
+   font-size: 1.6em;
    text-align: left;
-   line-height: 1.4em;
+   line-height: 1.5em;
    width: 90%;
-   /* line-height: 2.1em; */
-   /* margin-bottom: 0.2em; */
    color: white;
-   padding-left: 10px;
    overflow-wrap: break-word;
    hyphens: auto;
    background: black;
-   padding-left: 1.5em;
+   padding-left: 1em;
+   margin-left: 1em;
    text-indent: 1.8em;
-
  }
+
+ p.a {
+    font-family: 'Chakra Petch';
+    font-size: 0.8em;
+    text-align: left;
+    line-height: 1.4em;
+    width: 90%;
+    color: white;
+    overflow-wrap: break-word;
+    background: black;
+    padding-left: 0.5em;
+    margin-left: 4em;
+    text-indent: -1.5em;
+  }
+
+  p.b {
+     font-family: 'Chakra Petch';
+     font-size: 1.1em;
+     text-align: center;
+     line-height: 1.4em;
+     width: 90%;
+     color: white;
+     overflow-wrap: break-word;
+     padding: 5px;
+   }
 
 h1 {
   font-family: 'Chakra Petch';
@@ -140,7 +168,7 @@ h1 {
   width: 100%;
   font-size: 6em;
   line-height: 1.3em;
-  margin-top: 50%;
+  padding-top: 45%;
 
   margin-left: 0%;
   display: block;
@@ -169,7 +197,7 @@ h2 {
      line-height: 1.4em;
      width: 90%;
      color: white;
-     padding: 20px;
+     padding: 30px;
      overflow-wrap: break-word;
      hyphens: auto;
      text-decoration: underline;
@@ -297,24 +325,31 @@ sup{
  color: yellow;
 }
 
-@media only screen and (max-width: 779px){
-  br {
-  content: "";
-  margin: 220em;
-  display: block;
-  font-size: 100%;
+
+}
+
+
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 699px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+
+  ul{
+    margin-top: 180px;
   }
 
   div.col-2{
-    width:66%;
+    width: 50%;
     padding-top: 200px;
   }
   div.col-1, .col-1--imgHolder{
-    width:33%;
+    width: 50%;
   }
 
   .sections {
-  padding-top: 120px;
+  padding-top: 180px;
   }
 
   .contentHolder img{
@@ -327,13 +362,14 @@ sup{
 
   li{
     font-family: 'Chakra Petch';
-    padding: 10px;
+    padding: 20px;
     color: white;
     text-align: left;
     text-decoration: underline;
     width: 90%;
-    font-size: 1.8em;
-    line-height: 1.2em;
+    font-size: 3em;
+    line-height: 1.5em;
+
   }
 
   a:visited {
@@ -354,9 +390,9 @@ sup{
 
   p {
      font-family: 'Chakra Petch';
-     font-size: 1.1em;
+     font-size: 1.7em;
      text-align: left;
-     line-height: 1.3em;
+     line-height: 1.6em;
      width: 90%;
      /* line-height: 2.1em; */
      /* margin-bottom: 0.2em; */
@@ -365,23 +401,21 @@ sup{
      overflow-wrap: break-word;
      hyphens: auto;
      background: black;
-     text-indent: 30px;
+     margin-left: 0.5em;
+     text-indent: 1.5em;
 
    }
 
   h1 {
     font-family: 'Chakra Petch';
     color: white;
-    text-align: right;
+    text-align: center;
     text-decoration: underline;
     overflow-wrap: break-word;
-    width: 50%;
-    font-size: 2.7em;
+    width: auto;
+    font-size: 5em;
     line-height: 1.1em;
-    margin-top: 30%;
-    margin-left: 10%;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
+    margin-top: 550px;
   }
 
 
@@ -391,8 +425,8 @@ sup{
       color: white;
       text-align: left;
       text-decoration: underline;
-      font-size: 1.8em;
-      line-height: 1.2em;
+      font-size: 3em;
+      line-height: 1.5em;
       background: black;
       width: 90%;
       font-weight: normal;
@@ -402,9 +436,9 @@ sup{
    /*right column small chapters such as A. B. */
    h6 {
        font-family: 'Chakra Petch';
-       font-size: 1.3em;
+       font-size: 2.2em;
        text-align: left;
-       line-height: 1.2em;
+       line-height: 1.5em;
        width: 90%;
        color: white;
        padding: 20px;
@@ -477,7 +511,221 @@ sup{
           text-align: center;
           padding: 14px 16px;
           font-family: 'Chakra Petch';
-          font-size: 1.2em;
+          font-size: 2em;
+          white-space:nowrap;
+          border-radius: calc(0.6em + 16px);
+          background-color: white;
+          text-decoration: none;
+          display: inline-block;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+          background-color: yellow;
+          color: black;
+          display: inline-block;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+          background-color: black;
+          color: yellow !important;
+          display: inline-block;
+        }
+        br {
+        content: "";
+        margin-top: 400em;
+        margin-bottom:  400em;
+        display: block;
+
+        }
+
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 413px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    br {
+    content: "";
+    margin-top: 400em;
+    margin-bottom:  400em;
+    display: block;
+
+    }
+  div.col-2{
+    width: 50%;
+    padding-top: 200px;
+  }
+  div.col-1, .col-1--imgHolder{
+    width: 50%;
+  }
+
+  .sections {
+  padding-top: 150px;
+  }
+
+  .contentHolder img{
+   position: relative;
+   z-index: -1000;
+   background-attachment: scroll;
+   width: 200%;
+   right: 50%;
+  }
+
+  li{
+    font-family: 'Chakra Petch';
+    padding: 20px;
+    color: white;
+    text-align: left;
+    text-decoration: underline;
+    width: 90%;
+    font-size: 2.2em;
+    line-height: 1.5em;
+  }
+
+  a:visited {
+    font-family: 'Chakra Petch';
+    padding: 10px;
+    color: white;
+    text-align: left;
+    text-decoration: underline;
+    width: 90%;
+    font-size: 2.2em;
+    line-height: 1.3em;
+  }
+
+  a:hover {
+    color: yellow;
+  }
+
+
+  p {
+     font-family: 'Chakra Petch';
+     font-size: 1.7em;
+     text-align: left;
+     line-height: 1.6em;
+     width: 90%;
+     /* line-height: 2.1em; */
+     /* margin-bottom: 0.2em; */
+     color: white;
+     padding-left: 20px;
+     overflow-wrap: break-word;
+     hyphens: auto;
+     background: black;
+     margin-left: 0.5em;
+     text-indent: 1em;
+
+   }
+
+  h1 {
+    font-family: 'Chakra Petch';
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    overflow-wrap: break-word;
+    width: auto;
+    font-size: 5em;
+    line-height: 1.1em;
+    margin-top: 80%;
+  }
+
+
+  h2 {
+      font-family: 'Chakra Petch';
+      padding: 20px;
+      color: white;
+      text-align: left;
+      text-decoration: underline;
+      font-size: 2.2em;
+      line-height: 1.5em;
+      background: black;
+      width: 90%;
+      font-weight: normal;
+      margin-top: 50px;
+      }
+
+   /*right column small chapters such as A. B. */
+   h6 {
+       font-family: 'Chakra Petch';
+       font-size: 2em;
+       text-align: left;
+       line-height: 1.3em;
+       width: 90%;
+       color: white;
+       padding: 20px;
+       overflow-wrap: break-word;
+       hyphens: auto;
+       text-decoration: underline;
+       font-weight: normal;
+      }
+
+
+
+   /*main text for left column paragraphs*/
+    h5 {
+       font-family: 'Chakra Petch';
+       font-size: 1.5em;
+       text-align: left;
+       line-height: 1.4em;
+       width: 90%;
+       /* line-height: 2.1em; */
+       /* margin-bottom: 0.2em; */
+       color: black;
+       padding: 20px;
+       overflow-wrap: break-word;
+       hyphens: auto;
+       background: black;
+       text-indent: 30px;
+       font-weight:normal;
+     }
+
+    /*left column small chapters such as A. B. */
+     h6-1 {
+         font-family: 'Chakra Petch';
+         font-size: 0.8em;
+         text-align: left;
+         line-height: 0.7em;
+         width: 80%;
+         color: white;
+         overflow-wrap: break-word;
+         hyphens: auto;
+
+         font-weight: normal;
+
+        }
+
+        .footnote {
+          background-color: black;
+          padding: 1em;
+          word-wrap: break-word;
+          display: none;
+          width: auto;
+          border-radius: 5rem;
+
+          font-size: 0.7em;
+          line-height: 1.2em;
+          text-align: left;
+          color: yellow;
+          padding-left: 1.5em;
+          text-indent: -1.6em;
+        }
+
+        sup:hover + .footnote {
+          display: block;
+        }
+
+
+        .topnav a {
+          float: left;
+          margin: 4px;
+          color: black !important;
+          text-align: center;
+          padding: 14px 16px;
+          font-family: 'Chakra Petch';
+          font-size: 1.5em;
           white-space:nowrap;
           border-radius: calc(0.6em + 16px);
           background-color: white;
@@ -500,40 +748,3 @@ sup{
         }
 
 }
-
-
-
-@media only screen and (max-width: 400px){
-
-  br {
-  content: "";
-  margin: 220em;
-  display: block;
-  font-size: 100%;
-  }
-
-    h1 {
-      font-family: 'Chakra Petch';
-      color: white;
-      text-align: right;
-      text-decoration: underline;
-      overflow-wrap: break-word;
-      width: 50%;
-      font-size: 2.5em;
-      line-height: 1.1em;
-      margin-top: 30%;
-      margin-left: 15%;
-      writing-mode: vertical-rl;
-      transform: rotate(180deg);
-    }
-
-
-}
-
-
-
-
-
-
-a img { display:none; }
-a:hover img { display:block; }
