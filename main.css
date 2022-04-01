@@ -479,7 +479,7 @@ sup{
     /*left column small chapters such as A. B. */
      h6-1 {
          font-family: 'Chakra Petch';
-         font-size: 0.8em;
+         font-size: 1em;
          text-align: left;
          line-height: 0.7em;
          width: 80%;
